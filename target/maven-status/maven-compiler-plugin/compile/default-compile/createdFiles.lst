@@ -1,6 +1,8 @@
 com\example\unit_test_sample\DemoApplication.class
 com\example\unit_test_sample\service\EmployeeService.class
+com\example\unit_test_sample\utils\ResultStatus.class
 com\example\unit_test_sample\controller\EmployeeController.class
+com\example\unit_test_sample\utils\ResultStatus$ResultStatusBuilder.class
 com\example\unit_test_sample\repository\EmployeeRepository.class
 com\example\unit_test_sample\model\Employee$EmployeeBuilder.class
 com\example\unit_test_sample\model\Employee.class

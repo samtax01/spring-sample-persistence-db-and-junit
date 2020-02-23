@@ -18,8 +18,8 @@ import javax.persistence.Id;
 public class Employee {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    //@GeneratedValue(strategy = GenerationType.AUTO)
+    private String id;
     private String firstName;
     private String lastName;
     private String jobTitle;
