@@ -5,6 +5,8 @@ import com.example.unit_test_sample.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
+
+import javax.persistence.EntityManager;
 import java.util.List;
 
 //@RequestMapping(produces = "application/json", value="api/v1/")
@@ -14,9 +16,15 @@ public class EmployeeController {
     @Autowired
     private EmployeeService employeeService;
 
+    //@Autowired EntityManager entityManager;
+
 
     @GetMapping("")
     public Flux<List<Employee>> index(){
+//        System.out.println("----------------EntityManager--------------------");
+//        System.out.println(entityManager);
+//        System.out.println("----------------EntityManager--------------------");
+
         return Flux.just(employeeService.getAll()).log();
     }
 
